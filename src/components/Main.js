@@ -3,6 +3,7 @@ import React from "react";
 const styles = {
     main: {
         marginTop: "10vh",
+        marginBottom: "10vh",
         backgroundColor: "#6f83f5",
         backgroundImage: "url(https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png)",
         transform: "skewY(-6deg)",
