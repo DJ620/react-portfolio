@@ -4,7 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
             <div>
                 <Navbar />
                 <Main>
-                <Route exact path="/" component={Portfolio} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/" component={Portfolio} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contact" component={Contact} />
                 </Main>
                 <Footer />
             </div>
