@@ -17,7 +17,7 @@ const styles = {
 const Main = props => {
     return (
         <main style={styles.main}>
-            <div style={styles.block}>
+            <div className="container" style={styles.block}>
                 {props.children}
             </div>
         </main>
