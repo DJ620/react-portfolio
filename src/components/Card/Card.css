@@ -1,3 +1,11 @@
 .repo:hover {
     background: #dea705 !important;
 }
+
+.box-shadow {
+    box-shadow: 2px 2px 10px 1px black;
+}
+
+.box-shadow:hover {
+    box-shadow: 5px 5px 15px 2px black;
+}
