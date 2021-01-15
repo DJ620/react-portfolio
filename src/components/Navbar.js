@@ -1,15 +1,22 @@
 import React from "react";
 import Col from "./Grid/Col";
 import { Link, useLocation } from "react-router-dom";
+import headshot from "../assets/img/dh-PRINT-hr-1-round.png";
+
+const styles = {
+    nav: {
+        marginTop: 90
+    }
+};
 
 const Navbar = () => {
     const location = useLocation();
 
     return (
-        <nav className="container mt-5">
+        <nav className="container" style={styles.nav}>
             <div className="row">
                 <Col class="col-xl-2 col-xs-12 ml-lg-5 ml-xl-n3 pl-0 d-flex justify-content-center">
-                    <img src={require ("../assets/img/dh-PRINT-hr-1-round.png")} className="img-fluid" alt="DJ headshot" />
+                    <img src={headshot} className="img-fluid" alt="DJ headshot" />
                 </Col>
                 <Col class="col-xl-5 col-lg-6 col-xs-12">
                     <div className="row">

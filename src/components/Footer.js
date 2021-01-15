@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import twitter from "../assets/img/twitter.png";
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                     <img src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg" className="github mt-3"/>
                 </a>
                 <a href="https://twitter.com/DjhershWebDev" target="_blank">
-                    <img src="assets/img/twitter.png" class="twitter mt-1 ml-1"/>
+                    <img src={twitter} class="twitter mt-1 ml-1"/>
                 </a>
             </div>
         </footer>
