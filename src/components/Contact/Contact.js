@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const styles = {
@@ -11,6 +12,29 @@ const styles = {
 };
 
 const Contact = () => {
+    const [form, setForm] = useState({
+        contact_number: "",
+        user_name: "",
+        user_email: "",
+        message: ""
+    });
+    
+    const handleSubmit = event => {
+        event.preventDefault();
+        emailjs.sendForm('service_c7rxoqk', 'template_dia2ck5', event.target, 'user_HRpuwBHjAKteVvrKCOZrz')
+            .then(result => {
+                console.log(result.text);
+                setForm({
+                    contact_number: "",
+                    user_name: "",
+                    user_email: "",
+                    message: ""
+                });
+            }, error => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <div style={{paddingBottom: "150px"}}>
             <h4 className="text-center text-lg-right text-white" style={styles.shadow}><span className="font-weight-bold" style={styles.yellow}>Email:</span> DanielJHersh@gmail.com</h4>
@@ -18,25 +42,25 @@ const Contact = () => {
             <section className="form-group">
                 <h1 class="display-4 font-weight-bold text-white text-center" style={styles.shadow}>Let's Work Together!</h1>
                 <article class="card-body">
-                    <form id="contact-form">
+                    <form onSubmit={handleSubmit}>
                         <div className="form-group">
-                            <input type="hidden" name="contact_number" id="contact_number" />
+                            <input type="hidden" name="contact_number" value={form.contact_number} onChange={e => setForm({ ...form, contact_number: e.target.value })}/>
                             <label for="name" class="text-white">
                                 <h3>Name</h3>
                             </label>
-                            <input type="text" name="user_name" class="form-control" id="nameInput" placeholder="Enter name" />
+                            <input type="text" name="user_name" value={form.user_name} class="form-control" placeholder="Enter name" onChange={e => setForm({ ...form, user_name: e.target.value })}/>
                         </div>
                         <div className="form-group">
                             <label for="Email" className="text-white">
                                 <h3>Email address</h3>
                             </label>
-                            <input type="email" name="user_email" className="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" />
+                            <input type="email" name="user_email" value={form.user_email} className="form-control" aria-describedby="emailHelp" placeholder="Enter email" onChange={e => setForm({ ...form, user_email: e.target.value })}/>
                         </div>
                         <div className="form-group">
                             <label for="message" className="text-white">
                                 <h3>Message</h3>
                             </label>
-                            <textarea name="message" className="form-control" id="messageInput" rows="3" placeholder="Enter message" />
+                            <textarea name="message" value={form.message} className="form-control" rows="3" placeholder="Enter message" onChange={e => setForm({ ...form, message: e.target.value })}/>
                         </div>
                         <button type="submit" value="send" className="btn btn-lg contact-btn text-white repo" style={{backgroundColor: "#F7B801"}}>
                             <h3 className="font-weight-bold" style={{marginBottom: "-.5px", textShadow: "none"}}>Submit</h3>
