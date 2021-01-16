@@ -1,49 +1,49 @@
-body {
+/* body {
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
-}
+} */
 
-* {
+/* * {
     font-family: "Source Sans Pro", sans-serif;
-}
+} */
 
-.text-blue {
+/* .text-blue {
     color: #425be7;
-}
+} */
 
-.text-yellow {
+/* .text-yellow {
     color: #F7B801;
     text-shadow: 5px 5px 20px black;
-}
+} */
 
-.link-color {
+/* .link-color {
     color: #5a72f9;
-}
+} */
 
-a:hover {
+/* a:hover {
     text-decoration: none !important;
-}
+} */
 
-li .link-color:hover {
+/* li .link-color:hover {
     color: white;
     background-color: #5a72f9;
     border-radius: 10px;
     padding: 7px;
     margin: -7px;
     box-shadow: 1px 1px 10px black;
-}
+} */
 
-li .link-color:active {
+/* li .link-color:active {
     box-shadow: 1px 1px 5px black;
-}
+} */
 
-.one-pix {
+/* .one-pix {
     margin-top: -1px;
     margin-right: -1px;
-}
+} */
 
 main {
     margin-top: 10vh;
