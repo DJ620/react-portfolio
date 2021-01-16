@@ -23,6 +23,8 @@ https://evening-tor-34722.herokuapp.com/
 
 -Font Awesome: https://fontawesome.com/
 
+-EmailJS: https://www.emailjs.com/
+
 ## License
 
 MIT License
