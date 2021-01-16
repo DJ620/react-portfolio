@@ -13,7 +13,6 @@ const styles = {
 
 const Contact = () => {
     const [form, setForm] = useState({
-        contact_number: "",
         user_name: "",
         user_email: "",
         message: ""
@@ -25,7 +24,6 @@ const Contact = () => {
             .then(result => {
                 console.log(result.text);
                 setForm({
-                    contact_number: "",
                     user_name: "",
                     user_email: "",
                     message: ""
@@ -44,7 +42,7 @@ const Contact = () => {
                 <article class="card-body">
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
-                            <input type="hidden" name="contact_number" value={form.contact_number} onChange={e => setForm({ ...form, contact_number: e.target.value })}/>
+                            <input type="hidden" name="contact_number" />
                             <label for="name" class="text-white">
                                 <h3>Name</h3>
                             </label>
