@@ -1,13 +1,22 @@
 import React from "react";
 import "./Contact.css";
 
+const styles = {
+    shadow: {
+        textShadow: "5px 5px 25px black"
+    },
+    yellow: {
+        color: "#F7B801",
+    }
+};
+
 const Contact = () => {
     return (
         <div style={{paddingBottom: "150px"}}>
-            <h4 className="text-center text-lg-right text-white info"><span className="font-weight-bold text-yellow">Email:</span> DanielJHersh@gmail.com</h4>
-            <h4 className="text-center text-lg-right text-white mb-5 info"><span className="font-weight-bold text-yellow">Phone Number:</span> &zwj;(818) &zwj;632-9905</h4>
-            <section className="form-group" id="contact">
-                <h1 class="display-4 font-weight-bold text-white text-center">Let's Work Together!</h1>
+            <h4 className="text-center text-lg-right text-white" style={styles.shadow}><span className="font-weight-bold" style={styles.yellow}>Email:</span> DanielJHersh@gmail.com</h4>
+            <h4 className="text-center text-lg-right text-white mb-5" style={styles.shadow}><span className="font-weight-bold" style={styles.yellow}>Phone Number:</span> &zwj;(818) &zwj;632-9905</h4>
+            <section className="form-group">
+                <h1 class="display-4 font-weight-bold text-white text-center" style={styles.shadow}>Let's Work Together!</h1>
                 <article class="card-body">
                     <form id="contact-form">
                         <div className="form-group">
@@ -30,7 +39,7 @@ const Contact = () => {
                             <textarea name="message" className="form-control" id="messageInput" rows="3" placeholder="Enter message" />
                         </div>
                         <button type="submit" value="send" className="btn btn-lg contact-btn text-white repo" style={{backgroundColor: "#F7B801"}}>
-                            <h3 className="font-weight-bold subtext">Submit</h3>
+                            <h3 className="font-weight-bold" style={{marginBottom: "-.5px", textShadow: "none"}}>Submit</h3>
                         </button>
                     </form>
                 </article>

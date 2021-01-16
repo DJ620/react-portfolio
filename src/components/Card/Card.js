@@ -13,8 +13,8 @@ const styles = {
         webkitTextStroke: "1px #576ef0",
         textShadow: "5px 5px 20px black"
     },
-    button: {
-        backgroundColor: "#F7B801"
+    img: {
+        borderRadius: "25px"
     }
 };
 
@@ -25,10 +25,10 @@ const Card = props => {
                 <div className={`card-body ${props.side}`}>
                     <h1 className="card-title text-center font-weight-bold" style={styles.project}>{props.title}</h1>
                     <a href={props.deployed} target="_blank">
-                        <img src={props.image} className="box-shadow img-fluid mb-5" />
+                        <img src={props.image} style={styles.img} className="box-shadow img-fluid mb-5" />
                     </a>
                     <div className="d-flex justify-content-around">
-                        <a href={props.repo} target="_blank" className="btn text-white mt-n4 repo" style={styles.button}>
+                        <a href={props.repo} target="_blank" className="btn text-white mt-n4 repo">
                             <span className="fab fa-github"></span> GitHub Repository
                         </a>
                     </div>

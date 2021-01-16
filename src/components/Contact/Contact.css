@@ -1,4 +1,7 @@
-.text-yellow {
-    color: #F7B801;
+.form-control {
+    box-shadow: 5px 5px 20px -5px black;
+}
+
+h3 {
     text-shadow: 5px 5px 20px black;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
-import twitter from "../assets/img/twitter.png";
+import twitter from "../../assets/img/twitter.png";
+import "./Footer.css";
 
 const Footer = () => {
     return (

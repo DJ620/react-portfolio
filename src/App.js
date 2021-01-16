@@ -5,7 +5,7 @@ import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 const styles = {
     body: {

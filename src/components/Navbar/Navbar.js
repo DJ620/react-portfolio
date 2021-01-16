@@ -31,15 +31,15 @@ const Navbar = () => {
                     </div>
                     <div className="row">
                         <Col attributes="col d-flex justify-content-center justify-content-lg-start mr-xl-5 ml-xl-n4">
-                            <h2 className="welcome mt-n4">Welcome to my portfolio!</h2>
+                            <h2 className="mt-n4">Welcome to my portfolio!</h2>
                         </Col>
                     </div>
                 </Col>
                 <Col attributes="col-xl-5 col-lg-6 col-xs-12 mr-md-3 mr-lg-0 mr-xl-n3 ml-lg-n4 ml-xl-0 pr-md-n3 d-flex p-2 justify-content-center justify-content-lg-end">
                     <div style={styles.adjust}>
-                        <ul className="list-inline mt-5 ml-xl-5 skew">
-                            <li className="list-inline-item"><Link to="/"><h2 className={location.pathname === "/" ? "font-weight-bold link-color" : "link-color"} id="portfolio-link">Portfolio</h2></Link></li>
-                            <li className="list-inline-item ml-xs-3 ml-sm-4"><Link to="/about"><h2 className={location.pathname === "/about" ? "font-weight-bold link-color" : "link-color"} id="about-me-link">About</h2></Link></li>
+                        <ul className="list-inline mt-5 ml-xl-5">
+                            <li className="list-inline-item"><Link to="/"><h2 className={location.pathname === "/" ? "font-weight-bold link-color" : "link-color"}>Portfolio</h2></Link></li>
+                            <li className="list-inline-item ml-xs-3 ml-sm-4"><Link to="/about"><h2 className={location.pathname === "/about" ? "font-weight-bold link-color" : "link-color"}>About</h2></Link></li>
                             <li className="list-inline-item mr-lg-n4 ml-xs-3 ml-sm-4"><Link to="/contact"><h2 className={location.pathname === "/contact" ? "font-weight-bold link-color" : "link-color"}>Contact</h2></Link></li>
                         </ul>
                     </div>
